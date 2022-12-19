@@ -41,30 +41,31 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
 
   <div class="container">
-    <h1 class="my-4 text-center">Weather for Delhi</h1>
+    <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
     <main>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm  border-primary">
             <div class="card-header py-3 text-bg-info border-primary">
-              <h4 class="my-0 fw-normal">Free</h4>
+              <h4 class="my-0 fw-normal">Temperature</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+              <h1 class="card-title pricing-card-title"><span id="temp2"></span><small class="text-muted fw-light">&#8451;</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>10 users included</li>
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
-              </ul>
+                <li>Temperature is  <span id="temp"></span></li>
+                <li>Feels like  <span id ="feels_like"></span></li>
+                <li>Min Temperature <span id ="min_temp"></span></li>
+                <li>Max Temperature  <span id ="max_temp"></span></li>
+                
+              </ul> 
             
             </div>
           </div>
@@ -72,15 +73,14 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm  border-primary">
             <div class="card-header py-3  text-bg-info border-primary">
-              <h4 class="my-0 fw-normal">Pro</h4>
+              <h4 class="my-0 fw-normal">Humidity</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+              <h1 class="card-title pricing-card-title"><span id ="humidity2"></span><small class="text-muted fw-light">%</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
+                <li>Cloud pct  <span id ="cloud_pct"></span></li>
+                <li>Humidity  <span id ="humidity"></span></li>
+                <li>Wind Degree  <span id ="wind_degrees"></span></li>
               </ul>
               
             </div>
@@ -89,15 +89,14 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm border-primary">
             <div class="card-header py-3 text-bg-info border-primary">
-              <h4 class="my-0 fw-normal">Enterprise</h4>
+              <h4 class="my-0 fw-normal">Wind Speed</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+              <h1 class="card-title pricing-card-title"><span id ="wind_speed2"></span><small class="text-muted fw-light">Km/Hr</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>30 users included</li>
-                <li>15 GB of storage</li>
-                <li>Phone and email support</li>
-                <li>Help center access</li>
+                <li>Wind speed  <span id ="wind_speed"></span></li>
+                <li>Sunrise  <span id ="sunrise"></span></li>
+                <li>Sunset <span id ="sunset"></span></li>
               </ul>
              
             </div>
